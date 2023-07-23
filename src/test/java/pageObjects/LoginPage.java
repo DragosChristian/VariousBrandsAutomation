@@ -15,11 +15,11 @@ public class LoginPage {
     public WebDriver driver;
     WebDriverWait wait;
 
-    @FindBy(how = How.NAME, using = "email']")
+    @FindBy(how = How.CSS, using = "input.textInput-input-3vj")
     WebElement usernameInput;
-    @FindBy(how = How.XPATH, using = "password")
+    @FindBy(how = How.NAME, using = "password")
     WebElement passwordInput;
-    @FindBy(how = How.XPATH, using = "//span[normalize-space()='Logheza-te']")
+    @FindBy(how = How.XPATH, using = "//div[@id='root']/main/div[2]/div/div/div/div/aside/div[2]/form/div[2]/button/span")
     WebElement submitButton;
 
 
@@ -33,6 +33,7 @@ public class LoginPage {
     }
 
     public void login(String username, String password) {
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         usernameInput.clear();
         usernameInput.sendKeys(username);
         passwordInput.clear();
@@ -54,7 +55,7 @@ public class LoginPage {
         System.out.println("Open the next url:" + hostname + "login");
         driver.get(hostname + "login");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")).click();
+        //driver.findElement(By.xpath("//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")).click();
     }
 
 }
