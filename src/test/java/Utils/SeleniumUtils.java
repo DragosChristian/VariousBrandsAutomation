@@ -31,8 +31,8 @@ public class SeleniumUtils {
                 break;
             case FIREFOX:
                 WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
-                FirefoxProfile profile = new FirefoxProfile();  //Profilul este necesar
-                FirefoxOptions options = new FirefoxOptions();  //Noul Desired Capabilities
+                FirefoxProfile profile = new FirefoxProfile();
+                FirefoxOptions options = new FirefoxOptions();
                 options.setProfile(profile);
                 options.addArguments("--start-maximized");
                 driver = new FirefoxDriver(options);
@@ -42,7 +42,7 @@ public class SeleniumUtils {
                 driver = new EdgeDriver();
                 break;
             default:
-                System.out.println("WARNING selected browser is not supported: " + browsers.toString());
+                System.out.println("WARNING selected browser is not supported: " + browsers);
         }
         return driver;
     }

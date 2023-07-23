@@ -22,7 +22,7 @@ public class SearchPage {
     public WebDriver driver;
     WebDriverWait wait;
 
-    @FindBy(how = How.XPATH, using = "//img[@title='Cauta']")
+    @FindBy(how = How.XPATH, using = "//div[@id='root']/main/header/div/div/div/div[4]/button/img")
     WebElement searchButton;
 
     @FindBy(how = How.NAME, using = "search_query")
@@ -54,8 +54,10 @@ public class SearchPage {
 
 
     public void openSearchPage(String hostname) {
-        System.out.println("Open the next url:" + hostname + "product/search");
-        driver.get(hostname + "product/search");
+        System.out.println("Open the next url:" + hostname);
+        driver.get(hostname);
+        searchButton.click();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
 

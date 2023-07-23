@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestsRunner">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <!--        <listener class-name="reports.TestListenerCustom"/>-->
+        <!--        <listener class-name="reports.CustomTestReporter"/>-->
+    </listeners>
+    <test name="MyTestsRunner">
+        <classes>
+            <class name="Tests.HomePageTests">
+                <methods>
+                    <include name="HomePageTitlesCheck"/>
+                </methods>
+            </class>
+            <class name="Tests.NegativeLoginTests">
+                <methods>
+                    <include name="sqlTest"/>
+                </methods>
+            </class>
+            <class name="Tests.PositiveSearchTests">
+                <methods>
+                    <include name="csvTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- VariousBrands -->
+</suite> <!-- Default Suite -->
