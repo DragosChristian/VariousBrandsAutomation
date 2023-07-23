@@ -38,8 +38,8 @@ public class SearchResultsPage {
     }
 
     public void openSearchResultsPage(String hostname) {
-        System.out.println("Open the next url:" + hostname + "login");
-        driver.get(hostname + "login");
+        System.out.println("Open the next url:" + hostname);
+        driver.get(hostname);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.findElement(By.xpath("//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")).click();
     }
