@@ -1,5 +1,6 @@
 package pageObjects;
 
+import Models.SearchModel;
 import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,9 +38,10 @@ public class SearchResultsPage {
         PageFactory.initElements(this.driver, this);
     }
 
-    public void openSearchResultsPage(String hostname) {
-        System.out.println("Open the next url:" + hostname);
-        driver.get(hostname);
+    public void openSearchResultsPage(String searchResultsUrl) {
+        driver.get(searchResultsUrl);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        System.out.println("Open the next url:" + driver.getCurrentUrl());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.findElement(By.xpath("//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")).click();
     }
@@ -64,6 +66,12 @@ public class SearchResultsPage {
     public String filterHeaderText() {
         return SeleniumUtils.waitForGenericElement(driver, productFilterHeader, 15).getText();
     }
+
+
+
+
+
+
 
 
 

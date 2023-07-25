@@ -23,6 +23,7 @@ public class LoginStepDefinitions {
 
     @When("I enter valid credentials")
     public void i_enter_valid_credentials() {
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("input.textInput-input-3vj")).sendKeys("exemplumail1@gmail.com");
         driver.findElement(By.name("password")).sendKeys("paRolatestare123$");
     }

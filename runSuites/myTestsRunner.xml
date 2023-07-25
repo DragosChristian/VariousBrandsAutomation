@@ -23,6 +23,11 @@
                     <include name="csvTest"/>
                 </methods>
             </class>
+            <class name="Tests.TestRunner">
+                <methods>
+                    <include name="TestRunner"/>
+                </methods>
+            </class>
         </classes>
     </test> <!-- VariousBrands -->
 </suite> <!-- Default Suite -->

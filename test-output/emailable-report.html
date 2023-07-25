@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,101 +7,20 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">MyTestsRunner</th></tr>
-<tr><td><a href="#t0">MyTestsRunner</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">3</td><td class="num">30,018</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">MyTestsRunner</th></tr>
+<tr><td><a href="#t0">MyTestsRunner</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,713</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyTestsRunner</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTestsRunner &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Tests.PositiveSearchTests</td><td><a href="#m0">csvTest</a></td><td rowspan="3">1690142473737</td><td rowspan="3">907</td></tr><tr class="failedeven"><td><a href="#m1">csvTest</a></td></tr><tr class="failedeven"><td><a href="#m2">csvTest</a></td></tr><tr><th colspan="4">MyTestsRunner &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.HomePageTests</td><td><a href="#m3">HomePageTitlesCheck</a></td><td rowspan="1">1690142452362</td><td rowspan="1">4457</td></tr><tr class="passedodd"><td rowspan="5">Tests.NegativeLoginTests</td><td><a href="#m4">sqlTest</a></td><td rowspan="5">1690142465849</td><td rowspan="5">1465</td></tr><tr class="passedodd"><td><a href="#m5">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m6">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m7">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m8">sqlTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyTestsRunner</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTestsRunner &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.HomePageTests</td><td><a href="#m0">HomePageTitlesCheck</a></td><td rowspan="1">1690238657886</td><td rowspan="1">5595</td></tr><tr class="passedodd"><td rowspan="5">Tests.NegativeLoginTests</td><td><a href="#m1">sqlTest</a></td><td rowspan="5">1690238667918</td><td rowspan="5">3348</td></tr><tr class="passedodd"><td><a href="#m2">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m3">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m4">sqlTest</a></td></tr><tr class="passedodd"><td><a href="#m5">sqlTest</a></td></tr><tr class="passedeven"><td rowspan="3">Tests.PositiveSearchTests</td><td><a href="#m6">csvTest</a></td><td rowspan="3">1690238680255</td><td rowspan="3">3684</td></tr><tr class="passedeven"><td><a href="#m7">csvTest</a></td></tr><tr class="passedeven"><td><a href="#m8">csvTest</a></td></tr></tbody>
 </table>
-<h2>MyTestsRunner</h2><h3 id="m0">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@480b57e2</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img&quot;}
-  (Session info: chrome=115.0.5790.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DRAGOS&apos;, ip: &apos;192.168.0.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\40742\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b5e1b37266cf7a0967902ec63bc36c9
-*** Element info: {Using=xpath, value=//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at pageObjects.SearchPage.openSearchPage(SearchPage.java:59)
-	at Tests.PositiveSearchTests.searchPositiveActions(PositiveSearchTests.java:41)
-	at Tests.PositiveSearchTests.csvTest(PositiveSearchTests.java:49)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@5b7aa898</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img&quot;}
-  (Session info: chrome=115.0.5790.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DRAGOS&apos;, ip: &apos;192.168.0.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\40742\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b5e1b37266cf7a0967902ec63bc36c9
-*** Element info: {Using=xpath, value=//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at pageObjects.SearchPage.openSearchPage(SearchPage.java:59)
-	at Tests.PositiveSearchTests.searchPositiveActions(PositiveSearchTests.java:41)
-	at Tests.PositiveSearchTests.csvTest(PositiveSearchTests.java:49)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@1192b58e</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img&quot;}
-  (Session info: chrome=115.0.5790.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DRAGOS&apos;, ip: &apos;192.168.0.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\40742\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b5e1b37266cf7a0967902ec63bc36c9
-*** Element info: {Using=xpath, value=//div[@id=&apos;root&apos;]/main/header/div/div/div/div[4]/button/img}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at pageObjects.SearchPage.openSearchPage(SearchPage.java:59)
-	at Tests.PositiveSearchTests.searchPositiveActions(PositiveSearchTests.java:41)
-	at Tests.PositiveSearchTests.csvTest(PositiveSearchTests.java:49)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests.HomePageTests#HomePageTitlesCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@15c4af7a</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@3bbf6abe</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@2f521c4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@62db3891</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@39a87e72</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MyTestsRunner</h2><h3 id="m0">Tests.HomePageTests#HomePageTitlesCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@6540cf1d</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@3ac3f6f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@6ca372ef</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@376c7d7d</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.NegativeLoginTests#sqlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.LoginModel@c2584d3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@60bb7995</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@91f565d</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.PositiveSearchTests#csvTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Models.SearchModel@7d986d83</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

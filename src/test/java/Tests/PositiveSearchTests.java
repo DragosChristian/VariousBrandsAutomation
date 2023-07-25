@@ -14,6 +14,7 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class PositiveSearchTests extends BaseTest {
 
@@ -49,6 +50,7 @@ public class PositiveSearchTests extends BaseTest {
         searchPositiveActions(sm);
         SearchResultsPage srp = new SearchResultsPage(driver);
         srp.openSearchResultsPage(hostname);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
 
